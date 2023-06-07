@@ -16,7 +16,7 @@ function buttonSave_onClick(){
     displayNotes();
     document.getElementById("noteContent").focus();
 }
- 
+// this function displays the notes after they are declared
 function displayNotes(){
     list.innerHTML = "";
     for(let i = 0; i < notes.length; i++){
@@ -28,7 +28,7 @@ function displayNotes(){
         }
     }
 }
-
+// after displaying the notest this function deletes the text that is declared
 function deactivateNote(e){
     for(let i = 0; i < notes.length; i++){
         if(notes[i].description === e.target.innerHTML){
